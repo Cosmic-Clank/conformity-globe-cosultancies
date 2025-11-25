@@ -1,23 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(99% 0 0);
+  --foreground: oklch(18% .01 240);
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(18% .01 240);
+  --popover: oklch(100% 0 0);
+  --popover-foreground: oklch(18% .01 240);
+  --primary: oklch(42% .14 240);
+  --primary-foreground: oklch(99% 0 0);
+  --secondary: oklch(97% .003 240);
+  --secondary-foreground: oklch(18% .01 240);
+  --muted: oklch(96% .004 240);
+  --muted-foreground: oklch(48% .012 240);
+  --accent: oklch(52% .16 200);
+  --accent-foreground: oklch(99% 0 0);
+  --destructive: oklch(57.7% .245 27.325);
+  --destructive-foreground: oklch(99% 0 0);
+  --border: oklch(91% .004 240);
+  --input: oklch(91% .004 240);
+  --ring: oklch(42% .14 240);
+  --chart-1: oklch(42% .14 240);
+  --chart-2: oklch(52% .16 200);
+  --chart-3: oklch(35% .08 240);
+  --chart-4: oklch(65% .1 200);
+  --chart-5: oklch(50% .08 220);
+  --radius: .875rem;
+  --sidebar: oklch(99% 0 0);
+  --sidebar-foreground: oklch(18% .01 240);
+  --sidebar-primary: oklch(42% .14 240);
+  --sidebar-primary-foreground: oklch(99% 0 0);
+  --sidebar-accent: oklch(97% .003 240);
+  --sidebar-accent-foreground: oklch(18% .01 240);
+  --sidebar-border: oklch(91% .004 240);
+  --sidebar-ring: oklch(42% .14 240);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --radius: var(--radius);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
