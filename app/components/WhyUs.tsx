@@ -1,18 +1,19 @@
 import React from "react";
+import FadeUp from "./FadeUp";
 
 const WhyChooseUs: React.FC = () => {
 	return (
 		<section id='why-us' className='py-32 bg-linear-to-b from-white to-secondary/30'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<div className='text-center mb-20'>
+				<FadeUp className='text-center mb-20' stagger>
 					<h2 className='text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance'>Why Choose Conformity Globe</h2>
 					<p className='text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty'>Behind every service, there is a specialist. We are proud of the expertise our people bring.</p>
 					<p className='mt-4 text-lg text-foreground/90 max-w-2xl mx-auto leading-relaxed'>
 						<span className='text-primary font-semibold'>✨ When you work with Conformity Globe,</span> you’re not just getting a service — you’re building a long-term partnership for success.
 					</p>
-				</div>
+				</FadeUp>
 
-				<div className='grid md:grid-cols-2 gap-6 max-w-5xl mx-auto'>
+				<FadeUp className='grid md:grid-cols-2 gap-6 max-w-5xl mx-auto' stagger>
 					{/* Practical Solutions */}
 					<div className='group relative overflow-hidden rounded-3xl bg-white p-10 shadow-sm hover:shadow-xl transition-all duration-300 border border-border/40 hover:border-border/20'>
 						<div className='absolute top-0 right-0 w-40 h-40 bg-linear-to-br from-primary/8 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
@@ -103,7 +104,7 @@ const WhyChooseUs: React.FC = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</FadeUp>
 			</div>
 		</section>
 	);

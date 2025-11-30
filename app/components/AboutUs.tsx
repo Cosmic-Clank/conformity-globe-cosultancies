@@ -1,12 +1,14 @@
 import React from "react";
 import { LuArrowRight, LuAward, LuCircleCheck, LuFileCheck, LuGraduationCap, LuLeaf, LuMapPin, LuUsers } from "react-icons/lu";
+import FadeRight from "./FadeRight";
+import FadeLeft from "./FadeLeft";
 
 function AboutUs() {
 	return (
 		<section id='about' className='py-32 bg-white'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='grid lg:grid-cols-2 gap-20 items-center'>
-					<div>
+					<FadeRight>
 						<h2 className='text-4xl sm:text-5xl font-bold text-foreground mb-8 text-balance leading-tight relative inline-block pb-4'>
 							Your partner in compliance, credibility, and competence<div className='absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-primary via-primary/60 to-transparent rounded-full'></div>
 						</h2>
@@ -31,13 +33,13 @@ function AboutUs() {
 							<div className='flex gap-4 items-start'>
 								<div className='w-2 h-2 bg-primary rounded-full mt-2.5 shrink-0'></div>
 								<p className='text-lg text-muted-foreground leading-relaxed'>
-									Conformity Globe L.L.C is based in Dubai, providing trusted services in <span className='font-semibold text-foreground'>conformity assessment, validation and verification (VVB), and greenhouse gas (GHG) support.</span> We also deliver professional training that empowers individuals and organizations to meet today’s challenges.
+									<span className='font-semibold text-foreground'>Trusted services</span> in conformity assessment, validation & verification (VVB), and greenhouse gas (GHG) support
 								</p>
 							</div>
 							<div className='flex gap-4 items-start'>
 								<div className='w-2 h-2 bg-primary rounded-full mt-2.5 shrink-0'></div>
 								<p className='text-lg text-muted-foreground leading-relaxed'>
-									What makes us different is our team of <span className='font-semibold text-foreground'>expert professionals,</span> each specialized in their respective fields. From assessing systems, verifying data, or guiding on environmental impacts — our people bring the knowledge and reliability your organization can trust.
+									<span className='font-semibold text-foreground'>Professional training</span> that empowers individuals and organizations to meet today's challenges
 								</p>
 							</div>
 							<div className='flex gap-4 items-start'>
@@ -51,8 +53,8 @@ function AboutUs() {
 							Learn More About Us
 							<LuArrowRight size={24} className='ml-2 h-5 w-5' />
 						</button>
-					</div>
-					<div className='grid grid-cols-2 gap-5'>
+					</FadeRight>
+					<FadeLeft className='grid grid-cols-2 gap-5'>
 						<button className='group relative overflow-hidden rounded-2xl p-7 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-xl bg-white border-2 border-border/40 hover:border-transparent'>
 							<div className='absolute inset-0 bg-linear-to-br from-blue-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
 							<div className='relative z-10'>
@@ -93,7 +95,7 @@ function AboutUs() {
 								<p className='text-sm text-muted-foreground group-hover:text-white/95 transition-colors leading-relaxed'>Professional development</p>
 							</div>
 						</button>
-					</div>
+					</FadeLeft>
 				</div>
 			</div>
 		</section>

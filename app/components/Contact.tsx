@@ -4,20 +4,21 @@ import { FaLocationPin, FaLocationPinLock } from "react-icons/fa6";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { LuLocate, LuMail, LuPhone, LuPin } from "react-icons/lu";
 import { MdLocationPin } from "react-icons/md";
+import FadeUp from "./FadeUp";
 
 const Contact: React.FC = () => {
 	return (
 		<section id='contact' className='py-24 bg-white'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<div className='text-center mb-16'>
+				<FadeUp className='text-center mb-16' stagger>
 					<h2 className='text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance'>Let&apos;s Discuss Your Goals</h2>
 					<p className='text-xl text-muted-foreground max-w-3xl mx-auto text-pretty'>Get in touch to learn how Conformity Globe can support your organization.</p>
 					<p className='mt-4 text-lg text-foreground/90 max-w-2xl mx-auto leading-relaxed'>
 						<span className='text-primary font-semibold'>✨ Let&apos;s discuss how Conformity Globe can support your goals.</span>
 					</p>
-				</div>
+				</FadeUp>
 
-				<div className='grid lg:grid-cols-2 gap-12'>
+				<FadeUp className='grid lg:grid-cols-2 gap-12'>
 					{/* Form */}
 					<div data-slot='card' className='bg-card text-card-foreground flex flex-col gap-6 rounded-xl border border-gray-300 shadow-sm p-8'>
 						<form className='space-y-6'>
@@ -90,26 +91,26 @@ const Contact: React.FC = () => {
 								</a>
 
 								{/* LinkedIn */}
-								<a href='https://www.linkedin.com/company/conformity-globe' target='_blank' rel='noreferrer' className='flex items-start gap-4 group'>
+								<a href='https://www.linkedin.com/company/conformity-globe-consultancies-llc/about/' target='_blank' rel='noreferrer' className='flex items-start gap-4 group'>
 									<div className='p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors'>
 										<LiaLinkedinIn className='h-6 w-6 text-primary' />
 									</div>
 									<div>
 										<p className='text-sm font-medium text-muted-foreground mb-1'>LinkedIn</p>
-										<p className='text-lg text-foreground group-hover:text-primary transition-colors'>Connect with us on LinkedIn</p>
+										<p className='text-lg text-foreground group-hover:text-primary transition-colors'>Conformity Globe Consultancies</p>
 									</div>
 								</a>
 
 								{/* Location text */}
-								<div className='flex items-start gap-4'>
-									<div className='p-3 bg-primary/10 rounded-xl'>
+								<a href='https://maps.app.goo.gl/wgsgs994sWMfrHVJ7' target='_blank' rel='noreferrer' className='flex items-start gap-4 group'>
+									<div className='p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors'>
 										<MdLocationPin className='h-6 w-6 text-primary' />
 									</div>
 									<div>
 										<p className='text-sm font-medium text-muted-foreground mb-1'>Location</p>
-										<p className='text-lg text-foreground'>Deira, Dubai, UAE</p>
+										<p className='text-lg text-foreground group-hover:text-primary transition-colors'>Deira, Dubai, UAE</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 
@@ -120,7 +121,7 @@ const Contact: React.FC = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</FadeUp>
 			</div>
 		</section>
 	);

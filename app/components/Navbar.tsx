@@ -16,27 +16,25 @@ function Navbar() {
 						<Image alt='Conformity Globe Consultancies LLC' width='240' height='60' className='h-12 w-auto' src='/images/logo.jpg' />
 					</div>
 					<div className='hidden lg:flex items-center gap-1  '>
-						<a href='#home' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
+						<a href='#home' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>
 							Home
 						</a>
-						<a href='#about' className='px-4 py-2 text-sm font-medium text-foreground/80  hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
+						<a href='#about' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>
 							About Us
 						</a>
-						<a href='#services' className='px-4 py-2 text-sm font-medium text-foreground/80  hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
+						<a href='#services' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>
 							Services
 						</a>
-						<a href='#projects' className='px-4 py-2 text-sm font-medium text-foreground/80  hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
+						<a href='#projects' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>
 							Projects
 						</a>
-						<a href='#expertise' className='px-4 py-2 text-sm font-medium text-foreground/80  hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
-							Expertise
+						<a href='#course' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>
+							Course Catalog
 						</a>
-						<a href='#contact' className='px-4 py-2 text-sm font-medium text-foreground/80  hover:text-foreground hover:bg-secondary/50 rounded-lg transition-all duration-200'>
-							Contact
-						</a>
-						<button data-slot='button' className='ml-4 px-4 py-2 bg-primary hover:bg-primary/50 text-white text-sm font-medium rounded-full transition-colors duration-100'>
+
+						<a href='#contact' className='ml-4 px-4 py-2 bg-primary hover:bg-primary/50 text-white text-sm font-medium rounded-full transition-colors duration-100'>
 							Get in Touch
-						</button>
+						</a>
 					</div>
 					<button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='lg:hidden p-2 rounded-lg text-foreground hover:bg-secondary/50 transition-colors'>
 						{mobileMenuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
