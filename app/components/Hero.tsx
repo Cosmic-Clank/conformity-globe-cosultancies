@@ -12,8 +12,8 @@ function Hero() {
 			</div>
 			<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full'>
 				<FadeUp className='max-w-3xl' stagger>
-					<h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 leading-[1.1] text-balance'>Expert Support in Conformity Assessment, Validation & Verification, and Greenhouse Gas Solutions.</h1>
-					<p className='text-md sm:text-lg text-white/95 mb-10 leading-relaxed text-pretty font-light'>At Conformity Globe L.L.C, we help organizations strengthen compliance, build credibility, and move towards a sustainable future. Our expert professionals deliver reliable services in conformity assessment, VVB, GHG solutions, and professional training.</p>
+					<h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1] text-balance'>Expert Support in Conformity Assessment</h1>
+					<p className='text-lg sm:text-xl text-white/95 mb-10 leading-relaxed text-pretty font-light'>We help organizations strengthen compliance, build credibility, and move towards a sustainable future through specialized expertise.</p>
 					<div className='flex flex-col sm:flex-row gap-4'>
 						<a href='#services' className='inline-flex items-center justify-center gap-2 rounded-full bg-white text-primary hover:bg-white/95 text-lg px-4 py-2 shadow-lg hover:shadow-xl transition-all font-semibold'>
 							Explore Our Services

@@ -8,7 +8,6 @@ import Expertise from "./components/Expertise";
 import WhyChooseUs from "./components/WhyUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Course from "./components/Course";
 
 export default function Home() {
 	return (
@@ -19,7 +18,6 @@ export default function Home() {
 			<Services />
 			<Projects />
 			{/* <Expertise /> */}
-			<Course />
 			<WhyChooseUs />
 			<Contact />
 			<Footer />
