@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
 				{/* Bottom bar */}
 				<div className='pt-8 border-t border-primary-foreground/20'>
 					<div className='flex flex-col sm:flex-row justify-between items-center gap-4'>
-						<p className='text-primary-foreground/80 text-sm'>© 2025 Conformity Globe Consultancies LLC. All rights reserved.</p>
+						<p className='text-primary-foreground/80 text-sm'>© {new Date().getFullYear()} Conformity Globe. All rights reserved.</p>
 						<div className='flex gap-6'>
 							<a href='#' className='text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors'>
 								Terms
