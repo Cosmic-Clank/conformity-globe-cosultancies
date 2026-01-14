@@ -14,7 +14,7 @@ function Navbar() {
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex items-center justify-between h-20'>
 					<Link href='/' className='shrink-0'>
-						<Image alt='Conformity Globe Consultancies LLC' width='240' height='60' className='h-12 w-auto' src='/images/logo.jpg' />
+						<Image alt='Conformity Globe Consultancies LLC' width='240' height='60' className='h-12 w-auto' src='/images/logo.png' />
 					</Link>
 					<div className='hidden lg:flex items-center gap-1  '>
 						<Link href='/#home' className='px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200 relative inline-block after:content-[""] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-primary after:rounded-full after:origin-right after:scale-x-0 after:transition-transform after:duration-300 hover:after:origin-left hover:after:scale-x-100'>

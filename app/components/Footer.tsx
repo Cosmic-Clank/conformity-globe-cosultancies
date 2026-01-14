@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
 					{/* Logo + tagline */}
 					<div className='lg:col-span-1'>
 						<div className='mb-4 bg-white p-3 rounded-lg inline-block'>
-							<Image alt='Conformity Globe' width={180} height={45} className='h-10 w-auto' style={{ color: "transparent" }} src='/images/logo.jpg' />
+							<Image alt='Conformity Globe' width={180} height={45} className='h-10 w-auto' style={{ color: "transparent" }} src='/images/logo.png' />
 						</div>
 						<p className='text-primary-foreground/80 text-sm leading-relaxed'>Expert support in conformity assessment, validation &amp; verification, and greenhouse gas solutions.</p>
 					</div>
